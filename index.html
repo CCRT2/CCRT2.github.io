@@ -7,126 +7,236 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- Startup Screen -->
+    <!-- Navigation -->
 
-    <div id="startup">
+    <header>
 
-        <div class="terminal">
+        <div class="container">
 
-            <p>> Initializing Workspace...</p>
-            <p>> Loading Profile...</p>
-            <p>> Loading Projects...</p>
-            <p>> Loading Experience...</p>
-            <p class="success">✓ Ready.</p>
-
-        </div>
-
-    </div>
-
-
-    <!-- Desktop -->
-
-    <main id="desktop">
-
-        <!-- Sidebar -->
-
-        <aside class="sidebar">
-
-            <h2>Explorer</h2>
+            <a href="#" class="logo">
+                Cohen<span>.</span>
+            </a>
 
             <nav>
 
-                <button>📄 About.md</button>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
 
-                <button>📂 Projects</button>
-
-                <button>📄 Skills.json</button>
-
-                <button>📄 Resume.pdf</button>
-
-                <button>📄 Contact.json</button>
+                <a href="resume.pdf" class="resume-btn">
+                    Resume
+                </a>
 
             </nav>
 
-        </aside>
+        </div>
 
+    </header>
 
-        <!-- Window -->
+    <!-- Hero -->
 
-        <section class="window">
+    <section class="hero">
 
-            <!-- Title Bar -->
+        <div class="container">
 
-            <div class="titlebar">
+            <p class="eyebrow">
+                Cybersecurity • AI • Infrastructure
+            </p>
 
-                <div class="window-buttons">
+            <h1>
+                Building secure software
+                and modern digital experiences.
+            </h1>
 
-                    <span class="red"></span>
-                    <span class="yellow"></span>
-                    <span class="green"></span>
+            <p class="hero-text">
 
-                </div>
+                Hi, I'm Cohen. I'm passionate about cybersecurity,
+                artificial intelligence, and building practical,
+                reliable software.
 
-                <h3>About.md</h3>
+            </p>
 
-            </div>
+            <div class="hero-buttons">
 
+                <a href="#projects" class="primary-btn">
+                    View Projects
+                </a>
 
-            <!-- Window Content -->
-
-            <div class="content">
-
-                <h1>Cohen Cox</h1>
-
-                <p class="subtitle">
-                    Cybersecurity • AI • Infrastructure
-                </p>
-
-                <p>
-                    Welcome to my portfolio.
-                </p>
-
-                <p>
-                    I'm passionate about cybersecurity, artificial intelligence,
-                    infrastructure, and building practical technology that solves
-                    real-world problems.
-                </p>
-
-                <h2>Currently Learning</h2>
-
-                <ul>
-
-                    <li>CompTIA A+</li>
-                    <li>Python</li>
-                    <li>Networking</li>
-                    <li>Windows Server</li>
-                    <li>Active Directory</li>
-
-                </ul>
+                <a href="#contact" class="secondary-btn">
+                    Contact Me
+                </a>
 
             </div>
 
-        </section>
+        </div>
 
-    </main>
+    </section>
 
+    <!-- About -->
 
-    <!-- Status Bar -->
+    <section id="about">
+
+        <div class="container">
+
+            <h2>About Me</h2>
+
+            <p>
+
+                I'm currently expanding my knowledge in cybersecurity,
+                networking, Windows Server, Active Directory,
+                Python, and AI development.
+
+                I enjoy solving technical challenges and building
+                projects that improve my skills.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <h2>Featured Projects</h2>
+
+            <div class="project-grid">
+
+                <article class="card">
+
+                    <h3>AI Assistant</h3>
+
+                    <p>
+                        A local AI assistant built for automation,
+                        conversation, and future integrations.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Python</span>
+                        <span>AI</span>
+
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Portfolio Website</h3>
+
+                    <p>
+
+                        A responsive portfolio built with
+                        HTML, CSS, and JavaScript.
+
+                    </p>
+
+                    <div class="tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Cybersecurity Lab</h3>
+
+                    <p>
+
+                        Hands-on learning environment focused on
+                        Windows Server, networking,
+                        and Active Directory.
+
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Windows</span>
+                        <span>Networking</span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <h2>Skills</h2>
+
+            <div class="skills">
+
+                <div class="skill">Cybersecurity</div>
+                <div class="skill">Python</div>
+                <div class="skill">Networking</div>
+                <div class="skill">Windows Server</div>
+                <div class="skill">Active Directory</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <h2>Let's Connect</h2>
+
+            <p>
+
+                Interested in working together or just want to say hello?
+
+            </p>
+
+            <a href="mailto:cohencox25@gmail.com" class="primary-btn">
+                cohencox25@gmail.com
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
 
     <footer>
 
-        <span>Portfolio v1.0</span>
+        <div class="container">
 
-        <span>Status ● Ready</span>
+            <p>
+                © 2026 Cohen Cox. All rights reserved.
+            </p>
+
+        </div>
 
     </footer>
 
