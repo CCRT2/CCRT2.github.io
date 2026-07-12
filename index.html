@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cohen Cox animated family-tree portfolio for IT, cybersecurity, projects, certifications, and homelab work.">
+  <title>Cohen Cox | Portfolio Tree</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <main class="portfolio-shell" aria-labelledby="portfolio-title">
+    <section class="tree-stage" aria-label="Interactive knowledge tree">
+      <div class="stage-header">
+        <div>
+          <p class="eyebrow">Animated Portfolio Tree</p>
+          <h1 id="portfolio-title">Cohen Cox</h1>
+        </div>
+        <div class="view-controls" aria-label="Tree view controls">
+          <button class="icon-button" type="button" data-action="zoom-out" aria-label="Zoom out">-</button>
+          <button class="icon-button" type="button" data-action="recenter" aria-label="Recenter tree">0</button>
+          <button class="icon-button" type="button" data-action="zoom-in" aria-label="Zoom in">+</button>
+        </div>
+      </div>
+
+      <svg id="knowledge-tree" class="knowledge-tree" role="application" aria-label="Cohen Cox expandable centered portfolio tree">
+        <defs>
+          <filter id="branch-glow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="3" result="blur"></feGaussianBlur>
+            <feMerge>
+              <feMergeNode in="blur"></feMergeNode>
+              <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+          </filter>
+          <radialGradient id="node-core" cx="50%" cy="45%" r="65%">
+            <stop offset="0%" stop-color="#ECECEC"></stop>
+            <stop offset="45%" stop-color="#46D48C"></stop>
+            <stop offset="100%" stop-color="#111A13"></stop>
+          </radialGradient>
+        </defs>
+        <g id="tree-viewport">
+          <g id="branch-layer"></g>
+          <g id="node-layer"></g>
+        </g>
+      </svg>
+
+      <div class="hint-strip" aria-live="polite">
+        <span>Click branches to expand</span>
+        <span>Drag to pan</span>
+        <span>Scroll to zoom</span>
+        <span>Double-click to recenter</span>
+      </div>
+    </section>
+  </main>
+
+  <aside id="info-panel" class="info-panel" aria-hidden="true" aria-labelledby="panel-title">
+    <button class="panel-close" type="button" aria-label="Close information panel">&times;</button>
+    <div class="panel-media" id="panel-media"></div>
+    <p class="panel-kicker" id="panel-kicker">Portfolio Node</p>
+    <h2 id="panel-title"></h2>
+    <p id="panel-description"></p>
+    <div class="tech-list" id="panel-tech"></div>
+    <div class="panel-links" id="panel-links"></div>
+  </aside>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
