@@ -1,700 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Cohen Cox | Cybersecurity, AI, software development, and infrastructure."
-    >
-
-    <title>Cohen Cox | Cybersecurity & AI/ML</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
-        rel="stylesheet"
-    >
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cohen Marley Cox — cybersecurity, AI, software and infrastructure portfolio.">
+  <title>Cohen Marley Cox | Security · AI · Infrastructure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Cohen Marley Cox home">
+      <span class="brand-mark">CM</span><span>Cohen Marley Cox</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
 
-    <!-- Background -->
-    <div class="background-grid" aria-hidden="true"></div>
-    <div class="background-glow glow-one" aria-hidden="true"></div>
-    <div class="background-glow glow-two" aria-hidden="true"></div>
-
-    <!-- Navigation -->
-    <header class="site-header">
-
-        <div class="container nav-container">
-
-            <a href="#top" class="logo">
-                Cohen<span>.</span>
-            </a>
-
-            <button
-                class="menu-toggle"
-                aria-label="Open navigation"
-                aria-expanded="false"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="nav" aria-label="Main navigation">
-
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-
-                <a href="resume.pdf" class="resume-btn">
-                    Resume ↗
-                </a>
-
-            </nav>
-
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Security • AI • Infrastructure</p>
+        <h1>Building systems that are <span>harder to break.</span></h1>
+        <p class="lede">I’m Cohen Marley Cox, a security-minded builder working across cybersecurity, software, AI and infrastructure. I like difficult systems, clean interfaces and projects that survive contact with reality.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span>↗</span></a>
+          <a class="button button-ghost" href="#contact">Get in touch</a>
         </div>
-
-    </header>
-
-
-    <main id="top">
-
-        <!-- HERO -->
-        <section class="hero section">
-
-            <div class="container hero-layout">
-
-                <div class="hero-content reveal">
-
-                    <div class="status">
-                        <span class="status-dot"></span>
-                        Building • Learning • Securing
-                    </div>
-
-                    <p class="eyebrow">
-                        Cybersecurity · AI · Software · Infrastructure
-                    </p>
-
-                    <h1>
-                        Building technology
-                        with <span>purpose.</span>
-                    </h1>
-
-                    <p class="hero-text">
-                        I'm Cohen, a cybersecurity-focused developer interested
-                        in artificial intelligence, software development,
-                        infrastructure, and understanding how systems work
-                        from the inside out.
-                    </p>
-
-                    <div class="hero-actions">
-
-                        <a href="#projects" class="button button-primary">
-                            Explore my work
-                            <span>↓</span>
-                        </a>
-
-                        <a href="#contact" class="button button-secondary">
-                            Let's connect
-                            <span>↗</span>
-                        </a>
-
-                    </div>
-
-                    <div class="quick-links">
-
-                        <!-- Replace these with your real URLs -->
-                        <a
-                            href="https://github.com/YOUR_USERNAME"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            GitHub ↗
-                        </a>
-
-                        <a
-                            href="https://www.linkedin.com/in/cohen-cox-6187b3432/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            LinkedIn ↗
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Terminal -->
-                <div class="terminal reveal">
-
-                    <div class="terminal-header">
-
-                        <div class="terminal-dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                        <span class="terminal-title">
-                            cohen@portfolio:~
-                        </span>
-
-                    </div>
-
-                    <div class="terminal-body">
-
-                        <p>
-                            <span class="prompt">$</span>
-                            whoami
-                        </p>
-
-                        <p class="terminal-output">
-                            cohen_cox
-                        </p>
-
-                        <p>
-                            <span class="prompt">$</span>
-                            focus
-                        </p>
-
-                        <p class="terminal-output">
-                            cybersecurity / ai / software
-                        </p>
-
-                        <p>
-                            <span class="prompt">$</span>
-                            status
-                        </p>
-
-                        <p class="terminal-output success">
-                            ● actively building
-                        </p>
-
-                        <p>
-                            <span class="prompt">$</span>
-                            <span class="cursor"></span>
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT -->
-        <section id="about" class="section section-border">
-
-            <div class="container two-column">
-
-                <div class="section-heading reveal">
-
-                    <p class="eyebrow">
-                        01 / About
-                    </p>
-
-                    <h2>
-                        Curious by default.
-                        <br>
-                        <span>Technical by choice.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="about-content reveal">
-
-                    <p>
-                        I'm interested in the intersection of cybersecurity,
-                        artificial intelligence, software development, and
-                        infrastructure.
-                    </p>
-
-                    <p>
-                        I like taking an idea, turning it into something real,
-                        and then figuring out how to make it better. My projects
-                        range from AI assistants and machine-learning experiments
-                        to networking and cybersecurity labs.
-                    </p>
-
-                    <p>
-                        I learn best by building, troubleshooting, experimenting,
-                        and understanding why something works the way it does.
-                    </p>
-
-
-                    <div class="about-stats">
-
-                        <div>
-                            <strong>01</strong>
-                            <span>Build</span>
-                        </div>
-
-                        <div>
-                            <strong>02</strong>
-                            <span>Break safely</span>
-                        </div>
-
-                        <div>
-                            <strong>03</strong>
-                            <span>Understand</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PROJECTS -->
-        <section id="projects" class="section">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="eyebrow">
-                        02 / Selected work
-                    </p>
-
-                    <h2>
-                        Things I've <span>built.</span>
-                    </h2>
-
-                    <p class="section-intro">
-                        A selection of projects, experiments, and technical
-                        work. More projects can be found on GitHub.
-                    </p>
-
-                </div>
-
-
-                <div class="project-grid">
-
-
-                    <!-- Project 1 -->
-                    <article class="project-card featured reveal">
-
-                        <div class="project-number">
-                            01
-                        </div>
-
-                        <div class="project-content">
-
-                            <div class="project-meta">
-                                <span>AI / Python</span>
-                                <span>In Development</span>
-                            </div>
-
-                            <h3>
-                                NEO
-                            </h3>
-
-                            <p>
-                                A custom AI assistant focused on conversation,
-                                automation, extensibility, and tool integration.
-                            </p>
-
-                            <div class="tags">
-
-                                <span>Python</span>
-                                <span>AI</span>
-                                <span>API</span>
-                                <span>Automation</span>
-
-                            </div>
-
-                            <!-- Replace with your actual repository -->
-                            <a
-                                href="https://github.com/YOUR_USERNAME/YOUR_REPO"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                            >
-                                View project ↗
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Project 2 -->
-                    <article class="project-card reveal">
-
-                        <div class="project-number">
-                            02
-                        </div>
-
-                        <div class="project-content">
-
-                            <div class="project-meta">
-                                <span>Machine Learning</span>
-                                <span>Python</span>
-                            </div>
-
-                            <h3>
-                                Neural Network Experiments
-                            </h3>
-
-                            <p>
-                                Small neural-network experiments exploring
-                                classification, model structure, and machine
-                                learning fundamentals.
-                            </p>
-
-                            <div class="tags">
-
-                                <span>Python</span>
-                                <span>Neural Networks</span>
-                                <span>ML</span>
-
-                            </div>
-
-                            <a
-                                href="https://github.com/YOUR_USERNAME/YOUR_REPO"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                            >
-                                View project ↗
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Project 3 -->
-                    <article class="project-card reveal">
-
-                        <div class="project-number">
-                            03
-                        </div>
-
-                        <div class="project-content">
-
-                            <div class="project-meta">
-                                <span>Cybersecurity</span>
-                                <span>Infrastructure</span>
-                            </div>
-
-                            <h3>
-                                Cybersecurity Lab
-                            </h3>
-
-                            <p>
-                                Hands-on infrastructure and security work
-                                involving networking, Windows environments,
-                                Active Directory, Linux, and virtualization.
-                            </p>
-
-                            <div class="tags">
-
-                                <span>Networking</span>
-                                <span>Windows</span>
-                                <span>Linux</span>
-                                <span>Active Directory</span>
-
-                            </div>
-
-                            <a
-                                href="https://github.com/YOUR_USERNAME/YOUR_REPO"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                            >
-                                View project ↗
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- EXPERIENCE -->
-        <section id="experience" class="section section-border">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="eyebrow">
-                        03 / Experience
-                    </p>
-
-                    <h2>
-                        Work beyond the <span>screen.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="timeline">
-
-
-                    <article class="timeline-item reveal">
-
-                        <div class="timeline-date">
-                            Previous
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Youth Ice Hockey Official
-                            </h3>
-
-                            <p class="company">
-                                Youth Hockey
-                            </p>
-
-                            <p>
-                                Officiated youth hockey games while applying
-                                rules fairly, communicating with players and
-                                coaches, and making decisions in fast-paced
-                                situations.
-                            </p>
-
-                            <div class="tags">
-
-                                <span>Leadership</span>
-                                <span>Decision-Making</span>
-                                <span>Communication</span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- You are hired, but have not started yet -->
-                    <article class="timeline-item reveal">
-
-                        <div class="timeline-date">
-                            2026
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Recreation Assistant
-                            </h3>
-
-                            <p class="company">
-                                Clark County School District
-                            </p>
-
-                            <p>
-                                Hired to support recreation programs and
-                                activities. Responsibilities and accomplishments
-                                will be added as experience develops.
-                            </p>
-
-                            <div class="tags">
-
-                                <span>Responsibility</span>
-                                <span>Teamwork</span>
-                                <span>Service</span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SKILLS -->
-        <section id="skills" class="section">
-
-            <div class="container">
-
-                <div class="section-heading reveal">
-
-                    <p class="eyebrow">
-                        04 / Toolkit
-                    </p>
-
-                    <h2>
-                        Technologies & <span>skills.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="skills-grid">
-
-
-                    <div class="skill-group reveal">
-
-                        <p class="skill-label">
-                            Development
-                        </p>
-
-                        <div class="skill-list">
-
-                            <span>Python</span>
-                            <span>C#</span>
-                            <span>JavaScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-group reveal">
-
-                        <p class="skill-label">
-                            Security
-                        </p>
-
-                        <div class="skill-list">
-
-                            <span>Cybersecurity</span>
-                            <span>CTFs</span>
-                            <span>Linux</span>
-                            <span>Security Fundamentals</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-group reveal">
-
-                        <p class="skill-label">
-                            Infrastructure
-                        </p>
-
-                        <div class="skill-list">
-
-                            <span>Networking</span>
-                            <span>Windows Server</span>
-                            <span>Active Directory</span>
-                            <span>Virtualization</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill-group reveal">
-
-                        <p class="skill-label">
-                            AI / ML
-                        </p>
-
-                        <div class="skill-list">
-
-                            <span>Neural Networks</span>
-                            <span>LLMs</span>
-                            <span>AI APIs</span>
-                            <span>Automation</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- CONTACT -->
-        <section id="contact" class="section contact-section section-border">
-
-            <div class="container contact-box reveal">
-
-                <p class="eyebrow">
-                    05 / Contact
-                </p>
-
-                <h2>
-                    Let's build something
-                    <br>
-                    <span>worth talking about.</span>
-                </h2>
-
-                <p>
-                    Have a project, opportunity, or technical question?
-                    Get in touch.
-                </p>
-
-                <a
-                    href="mailto:cohencox25@gmail.com"
-                    class="button button-primary"
-                >
-                    cohencox25@gmail.com ↗
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <div class="container footer-inner">
-
-            <span>
-                © <span id="year"></span> Cohen Cox
-            </span>
-
-            <span>
-                Built with HTML · CSS · JavaScript
-            </span>
-
+        <div class="availability"><span class="pulse"></span> Open to ambitious projects</div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-top"><span>COHEN://PORTFOLIO</span><span>ONLINE</span></div>
+        <div class="terminal">
+          <p><span class="muted">$</span> whoami</p>
+          <p class="accent">cohen@builder</p>
+          <p><span class="muted">$</span> focus --list</p>
+          <p>cybersecurity<br>artificial-intelligence<br>software-engineering<br>systems-infrastructure</p>
+          <p><span class="muted">$</span> cat status.txt</p>
+          <p class="success">Shipping. Learning. Iterating.</p>
+          <span class="cursor"></span>
         </div>
+      </div>
+    </section>
 
-    </footer>
+    <section id="work" class="section">
+      <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Projects with a point of view.</h2></div>
+      <div class="project-grid">
+        <article class="project featured">
+          <div class="project-meta"><span>01</span><span>AI · Software</span></div>
+          <h3>NEO</h3>
+          <p>A local AI assistant focused on useful tooling, memory, APIs and a clean browser-based experience.</p>
+          <div class="tags"><span>Python</span><span>LLMs</span><span>FastAPI</span><span>SQLite</span></div>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>02</span><span>Cybersecurity</span></div>
+          <h3>Security Infrastructure</h3>
+          <p>Security operations concepts spanning monitoring, endpoint visibility, vulnerability management and incident response.</p>
+          <div class="tags"><span>MSSP</span><span>SIEM</span><span>EDR/XDR</span></div>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>03</span><span>Community · Tech</span></div>
+          <h3>Cyber Evolution Initiative</h3>
+          <p>Hands-on technology and cybersecurity work designed to turn curiosity into practical skill.</p>
+          <div class="tags"><span>Security</span><span>Education</span><span>Open Source</span></div>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>04</span><span>Systems</span></div>
+          <h3>Labs & Experiments</h3>
+          <p>Home labs, networking, Linux, hardware and prototypes used to understand systems from the metal up.</p>
+          <div class="tags"><span>Linux</span><span>Networking</span><span>Hardware</span></div>
+        </article>
+      </div>
+    </section>
 
+    <section id="about" class="section about">
+      <div class="section-heading"><p class="eyebrow">About</p><h2>Curious by default. Serious about the work.</h2></div>
+      <div class="about-grid">
+        <p class="about-lede">My work sits where security, software and infrastructure overlap. I enjoy taking something complicated, understanding how it actually behaves, and turning that knowledge into a system that is reliable, understandable and useful.</p>
+        <div class="principles">
+          <div><span>01</span><strong>Build deep</strong><p>Understand the system, not just the interface.</p></div>
+          <div><span>02</span><strong>Ship useful</strong><p>Prefer working prototypes over endless theory.</p></div>
+          <div><span>03</span><strong>Stay curious</strong><p>Keep learning when the problem gets weird.</p></div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Back to top -->
-    <button
-        class="back-top"
-        aria-label="Back to top"
-    >
-        ↑
-    </button>
+    <section id="stack" class="section">
+      <div class="section-heading"><p class="eyebrow">Toolkit</p><h2>The stuff I reach for.</h2></div>
+      <div class="stack-grid">
+        <div class="stack-card"><span>Languages</span><strong>Python · Rust · JavaScript · HTML · CSS</strong></div>
+        <div class="stack-card"><span>AI</span><strong>LLMs · Ollama · Transformers · FastAPI</strong></div>
+        <div class="stack-card"><span>Security</span><strong>Networking · Linux · Vulnerability Assessment · Blue Teaming</strong></div>
+        <div class="stack-card"><span>Infrastructure</span><strong>Git · Docker · Databases · Virtualization · APIs</strong></div>
+      </div>
+    </section>
 
+    <section id="contact" class="section contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Have a hard problem?</h2>
+        <p class="lede">I’m interested in ambitious builds, security work and projects that need someone willing to go a layer deeper.</p>
+      </div>
+      <a class="contact-link" href="mailto:cohencox25@gmail.com">cohencox25@gmail.com ↗</a>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Cohen Marley Cox</span>
+    <span>Built with HTML, CSS & a little stubbornness.</span>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
