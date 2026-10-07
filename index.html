@@ -1,121 +1,112 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cohen Marley Cox — cybersecurity, AI, software and infrastructure portfolio.">
-  <title>Cohen Marley Cox | Security · AI · Infrastructure</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Cohen Marley Cox — cybersecurity, AI, software and infrastructure.">
+<meta name="theme-color" content="#050706">
+<title>Cohen Marley Cox — Security, AI & Infrastructure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Cohen Marley Cox home">
-      <span class="brand-mark">CM</span><span>Cohen Marley Cox</span>
-    </a>
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#stack">Stack</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-  </header>
+<div class="noise"></div>
+<div class="orb orb-a"></div><div class="orb orb-b"></div>
+<header class="site-header">
+  <a class="brand" href="#top"><span class="brand-symbol">CM</span><span>Cohen Marley Cox</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#work">Work</a><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions"><a class="header-cta" href="resume.pdf">Résumé <span>↗</span></a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button></div>
+</header>
 
-  <main id="top">
-    <section class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow">Security • AI • Infrastructure</p>
-        <h1>Building systems that are <span>harder to break.</span></h1>
-        <p class="lede">I’m Cohen Marley Cox, a security-minded builder working across cybersecurity, software, AI and infrastructure. I like difficult systems, clean interfaces and projects that survive contact with reality.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore my work <span>↗</span></a>
-          <a class="button button-ghost" href="resume.pdf">View résumé ↗</a>
-        </div>
-        <div class="availability"><span class="pulse"></span> Open to ambitious projects</div>
-      </div>
-      <div class="hero-panel">
-        <div class="panel-top"><span>COHEN://PORTFOLIO</span><span>ONLINE</span></div>
-        <div class="terminal">
-          <p><span class="muted">$</span> whoami</p>
-          <p class="accent">cohen@builder</p>
-          <p><span class="muted">$</span> focus --list</p>
-          <p>cybersecurity<br>artificial-intelligence<br>software-engineering<br>systems-infrastructure</p>
-          <p><span class="muted">$</span> cat status.txt</p>
-          <p class="success">Shipping. Learning. Iterating.</p>
-          <span class="cursor"></span>
+<main id="top">
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy reveal">
+      <div class="status"><span class="status-dot"></span> Building what comes next</div>
+      <p class="kicker">CYBERSECURITY · AI · INFRASTRUCTURE</p>
+      <h1>Systems thinker.<br><em>Security builder.</em></h1>
+      <p class="hero-text">I build software, security systems and infrastructure where the interesting problems live at the intersection of technology and reality.</p>
+      <div class="hero-buttons"><a class="btn btn-primary" href="#work">Explore the work <span>↓</span></a><a class="text-link" href="#contact">Let’s talk <span>↗</span></a></div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="grid-lines"></div>
+      <div class="command-card">
+        <div class="command-bar"><span><i></i><i></i><i></i></span><small>cohen@builder ~ system</small><b>●</b></div>
+        <div class="command-body">
+          <div class="command-line"><span>$</span> ./focus --current</div>
+          <div class="focus-item"><strong>01</strong><div><b>Cybersecurity</b><small>Defense · Detection · Resilience</small></div></div>
+          <div class="focus-item"><strong>02</strong><div><b>Artificial Intelligence</b><small>Agents · Local models · Automation</small></div></div>
+          <div class="focus-item"><strong>03</strong><div><b>Infrastructure</b><small>Linux · Networks · Systems</small></div></div>
+          <div class="command-line dim"><span>$</span> status --json</div>
+          <div class="status-json">{ "state": <em>"shipping"</em>, "curiosity": <em>true</em> }</div>
         </div>
       </div>
-    </section>
+      <div class="floating-badge">01 <span>builder mindset</span></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span></span> Scroll to explore</div>
+</section>
 
-    <section id="work" class="section">
-      <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Projects with a point of view.</h2></div>
-      <div class="project-grid">
-        <article class="project featured">
-          <div class="project-meta"><span>01</span><span>AI · Software</span></div>
-          <h3>NEO</h3>
-          <p>A local AI assistant focused on useful tooling, memory, APIs and a clean browser-based experience.</p>
-          <div class="tags"><span>Python</span><span>LLMs</span><span>FastAPI</span><span>SQLite</span></div>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>02</span><span>Cybersecurity</span></div>
-          <h3>Security Infrastructure</h3>
-          <p>Security operations concepts spanning monitoring, endpoint visibility, vulnerability management and incident response.</p>
-          <div class="tags"><span>MSSP</span><span>SIEM</span><span>EDR/XDR</span></div>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>03</span><span>Community · Tech</span></div>
-          <h3>Cyber Evolution Initiative</h3>
-          <p>Hands-on technology and cybersecurity work designed to turn curiosity into practical skill.</p>
-          <div class="tags"><span>Security</span><span>Education</span><span>Open Source</span></div>
-        </article>
-        <article class="project">
-          <div class="project-meta"><span>04</span><span>Systems</span></div>
-          <h3>Labs & Experiments</h3>
-          <p>Home labs, networking, Linux, hardware and prototypes used to understand systems from the metal up.</p>
-          <div class="tags"><span>Linux</span><span>Networking</span><span>Hardware</span></div>
-        </article>
-      </div>
-    </section>
+<section id="work" class="section">
+  <div class="section-top"><div><span class="section-number">01 /</span><p class="kicker">SELECTED WORK</p></div><h2>Things I’ve<br><em>built & explored.</em></h2></div>
+  <div class="work-grid">
+    <article class="work-card work-large">
+      <div class="card-glow"></div><div class="card-head"><span>AI / SOFTWARE</span><span>01</span></div>
+      <div class="card-art neo-art"><div class="neo-core">N</div><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div></div>
+      <div class="card-content"><h3>NEO</h3><p>A local AI assistant exploring memory, tools, APIs and useful automation in a fast, private environment.</p><div class="chips"><span>Python</span><span>LLMs</span><span>FastAPI</span><span>SQLite</span></div></div>
+    </article>
+    <article class="work-card">
+      <div class="card-head"><span>CYBERSECURITY</span><span>02</span></div>
+      <div class="card-art security-art"><span>01</span><span>10</span><span>01</span><span>11</span><span>00</span><span>10</span></div>
+      <div class="card-content"><h3>Security Infrastructure</h3><p>Security operations concepts spanning monitoring, endpoint visibility, vulnerability management and response.</p><div class="chips"><span>MSSP</span><span>SIEM</span><span>EDR/XDR</span></div></div>
+    </article>
+    <article class="work-card">
+      <div class="card-head"><span>COMMUNITY / TECH</span><span>03</span></div>
+      <div class="card-art cei-art"><b>CEI</b><span>CYBER EVOLUTION INITIATIVE</span></div>
+      <div class="card-content"><h3>Cyber Evolution Initiative</h3><p>Hands-on technology and cybersecurity work built around turning curiosity into practical skill.</p><div class="chips"><span>Security</span><span>Education</span><span>Open Source</span></div></div>
+    </article>
+    <article class="work-card">
+      <div class="card-head"><span>SYSTEMS / LABS</span><span>04</span></div>
+      <div class="card-art lab-art"><div class="server s1"></div><div class="server s2"></div><div class="server s3"></div><div class="server s4"></div></div>
+      <div class="card-content"><h3>Labs & Experiments</h3><p>Linux, networking, hardware and prototypes used to understand systems from the ground up.</p><div class="chips"><span>Linux</span><span>Networking</span><span>Hardware</span></div></div></div>
+    </article>
+  </div>
+</section>
 
-    <section id="about" class="section about">
-      <div class="section-heading"><p class="eyebrow">About</p><h2>Curious by default. Serious about the work.</h2></div>
-      <div class="about-grid">
-        <p class="about-lede">My work sits where security, software and infrastructure overlap. I enjoy taking something complicated, understanding how it actually behaves, and turning that knowledge into a system that is reliable, understandable and useful.</p>
-        <div class="principles">
-          <div><span>01</span><strong>Build deep</strong><p>Understand the system, not just the interface.</p></div>
-          <div><span>02</span><strong>Ship useful</strong><p>Prefer working prototypes over endless theory.</p></div>
-          <div><span>03</span><strong>Stay curious</strong><p>Keep learning when the problem gets weird.</p></div>
-        </div>
-      </div>
-    </section>
+<section id="about" class="section about-section">
+  <div class="section-top"><div><span class="section-number">02 /</span><p class="kicker">ABOUT</p></div><h2>Curious by default.<br><em>Serious about the work.</em></h2></div>
+  <div class="about-layout">
+    <p class="about-statement">I’m drawn to complicated systems because there is always another layer underneath. My work is about finding that layer, understanding it, and building something better.</p>
+    <div class="principles">
+      <div><span>01</span><b>Understand deeply</b><p>Learn how the system actually behaves, not just how the documentation says it should.</p></div>
+      <div><span>02</span><b>Build with intent</b><p>Make tools that solve a real problem and interfaces that respect the person using them.</p></div>
+      <div><span>03</span><b>Keep moving</b><p>Prototype, test, break things safely, learn, and ship the next version.</p></div>
+    </div>
+  </div>
+</section>
 
-    <section id="stack" class="section">
-      <div class="section-heading"><p class="eyebrow">Toolkit</p><h2>The stuff I reach for.</h2></div>
-      <div class="stack-grid">
-        <div class="stack-card"><span>Languages</span><strong>Python · Rust · JavaScript · HTML · CSS</strong></div>
-        <div class="stack-card"><span>AI</span><strong>LLMs · Ollama · Transformers · FastAPI</strong></div>
-        <div class="stack-card"><span>Security</span><strong>Networking · Linux · Vulnerability Assessment · Blue Teaming</strong></div>
-        <div class="stack-card"><span>Infrastructure</span><strong>Git · Docker · Databases · Virtualization · APIs</strong></div>
-      </div>
-    </section>
+<section id="capabilities" class="section capabilities">
+  <div class="section-top"><div><span class="section-number">03 /</span><p class="kicker">CAPABILITIES</p></div><h2>A toolkit built<br><em>for hard problems.</em></h2></div>
+  <div class="cap-grid">
+    <div class="cap"><span>01</span><h3>Security</h3><p>Network security, vulnerability assessment, blue-team operations, monitoring and incident response.</p><div>Defense · Detection · Analysis</div></div>
+    <div class="cap"><span>02</span><h3>AI / Software</h3><p>Python, APIs, local LLMs, automation and full-stack experiments focused on useful outcomes.</p><div>Build · Automate · Iterate</div></div>
+    <div class="cap"><span>03</span><h3>Infrastructure</h3><p>Linux systems, networking, virtualization, databases, containers and the machinery beneath applications.</p><div>Systems · Networks · Linux</div></div>
+  </div>
+</section>
 
-    <section id="contact" class="section contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Have a hard problem?</h2>
-        <p class="lede">I’m interested in ambitious builds, security work and projects that need someone willing to go a layer deeper.</p>
-      </div>
-      <div class="contact-actions"><a class="contact-link" href="mailto:cohencox25@gmail.com">cohencox25@gmail.com ↗</a><a class="contact-secondary" href="https://github.com/CCRT2" target="_blank" rel="noopener">GitHub ↗</a></div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <span>© <span id="year"></span> Cohen Marley Cox</span>
-    <span>Built with HTML, CSS & a little stubbornness.</span>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<section id="contact" class="contact-section">
+  <div class="contact-inner">
+    <span class="section-number">04 / CONTACT</span>
+    <h2>Let’s build something<br><em>worth remembering.</em></h2>
+    <p>Have a difficult problem, an ambitious idea, or a project that needs another layer of thinking?</p>
+    <div class="contact-actions"><a class="btn btn-primary" href="mailto:cohencox25@gmail.com">Start a conversation <span>↗</span></a><a class="contact-github" href="https://github.com/CCRT2" target="_blank" rel="noopener">GitHub ↗</a></div>
+  </div>
+</section>
+</main>
+<footer><span>© <span id="year"></span> Cohen Marley Cox</span><span>Security · AI · Infrastructure</span><a href="#top">Back to top ↑</a></footer>
+<script src="script.js"></script>
+</body></html>
